@@ -1,4 +1,3 @@
-from word_analysis import common_words, word_frequency,unique_words
 from text_analyzer import Text_analyzer
 from file_handler import read_file
 
@@ -19,13 +18,13 @@ try:
     print("\nTotal Sentences: ",analyzer.sentence_counter())
 
 # common words 
-    print(f"\nMost Common Words: {common_words(text)}")
+    print(f"\nMost Common Words:", analyzer.common_words() )
 
 # unique words 
-    print(f"\nUnique Words: {unique_words(text)}")
+    print(f"\nUnique Words:", analyzer.unique_words())
 
 # word_frequency
-    print(f"\nword frequency: {word_frequency(text)}" )
+    print(f"\nword frequency:", analyzer.word_frequency() )
 
 
 except:
